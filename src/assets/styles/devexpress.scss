@@ -1,0 +1,190 @@
+.dx-datagrid-headers {
+  color: #4f4f4f;
+  font-weight: 500;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dx-datagrid .dx-column-lines>td {
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8;
+}
+
+.dx-datagrid .dx-row-lines>td {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row>td {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-borders>.dx-datagrid-filter-panel,
+.dx-datagrid-borders>.dx-datagrid-headers {
+  border-top: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-borders>.dx-datagrid-headers,
+.dx-datagrid-borders>.dx-datagrid-rowsview,
+.dx-datagrid-borders>.dx-datagrid-total-footer {
+  border-left: 1px solid #b8b8b8;
+  border-right: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-borders .dx-datagrid-rowsview,
+.dx-datagrid-headers+.dx-datagrid-rowsview,
+.dx-datagrid-rowsview.dx-datagrid-after-headers {
+  border-top: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-borders>.dx-datagrid-rowsview,
+.dx-datagrid-borders>.dx-datagrid-total-footer {
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dx-datagrid-rowsview .dx-row {
+  border-top: 1px solid #b8b8b8;
+  border-bottom: 1px solid #b8b8b8;
+}
+
+.dx-datagrid .dx-row-alt.dx-row:not(.dx-row-removed) {
+  border-bottom-color: #b8b8b8;
+}
+
+.dx-texteditor.dx-editor-outlined {
+  border: 1px solid rgba(0, 0, 0, 0.42);
+}
+
+.dx-texteditor.dx-state-active.dx-editor-filled,
+.dx-texteditor.dx-state-active.dx-editor-outlined,
+.dx-texteditor.dx-state-active.dx-editor-underlined,
+.dx-texteditor.dx-state-focused.dx-editor-filled,
+.dx-texteditor.dx-state-focused.dx-editor-outlined,
+.dx-texteditor.dx-state-focused.dx-editor-underlined {
+  border-color: #1976d2;
+  border-width: 2px;
+}
+
+.dx-datagrid-search-panel {
+  margin: 0;
+}
+
+.dx-checkbox-icon {
+  border-radius: 0;
+  border: 1px solid #b8b8b8;
+  background-color: #fcfcfc;
+}
+
+.dx-button-mode-contained {
+  border-color: #b8b8b8;
+
+  .dx-icon {
+    color: #888;
+  }
+}
+
+.dx-datagrid {
+  .dx-data-row {
+    &:hover:not(.dx-selection):not(.dx-row-focused) {
+      td {
+        background-color: rgba(25, 118, 210, 0.8) !important;
+        color: #fff !important;
+      }
+    }
+
+    &.dx-selection,
+    &.dx-row-focused {
+      td {
+        background-color: rgba(25, 118, 210) !important;
+        color: #fff !important;
+        border-bottom: 1px solid #b8b8b8 !important;
+      }
+
+      .dx-link {
+        background-color: transparent !important;
+        color: #fff !important;
+
+        &:active,
+        &:focus {
+          background-color: transparent !important;
+          color: #fff !important;
+        }
+      }
+    }
+
+    &.rowEditMark {
+      td {
+        background: rgba(175, 251, 152, 0.8) !important;
+        color: #333 !important;
+      }
+
+      &:hover:not(.dx-selection):not(.dx-row-focused) {
+        td {
+          background-color: rgba(175, 251, 152, 0.6) !important;
+          color: #333 !important;
+        }
+      }
+
+      &.dx-selection,
+      &.dx-row-focused {
+        td {
+          background-color: rgba(71, 204, 45, 1) !important;
+          color: #333 !important;
+        }
+      }
+    }
+
+    &.rowWarning {
+      td {
+        background: rgba(243, 251, 152, 0.8) !important;
+        color: #333 !important;
+      }
+
+      &:hover:not(.dx-selection):not(.dx-row-focused) {
+        td {
+          background-color: rgba(243, 251, 152, 0.6) !important;
+          color: #333 !important;
+        }
+      }
+
+      &.dx-selection,
+      &.dx-row-focused {
+        td {
+          background-color: rgba(207, 203, 41, 1) !important;
+          color: #333 !important;
+        }
+      }
+    }
+
+    &.rowDanger {
+      td {
+        background: rgba(244, 67, 54, 0.8) !important;
+        color: #333 !important;
+      }
+
+      &:hover:not(.dx-selection):not(.dx-row-focused) {
+        td {
+          background-color: rgba(244, 67, 54, 0.6) !important;
+          color: #333 !important;
+        }
+      }
+
+      &.dx-selection,
+      &.dx-row-focused {
+        td {
+          background-color: rgba(229, 57, 53, 1) !important;
+          color: #333 !important;
+        }
+      }
+    }
+  }
+}
+
+.dx-datagrid-headers .dx-datagrid-table .dx-row>td.col-required {
+  &>.dx-datagrid-text-content {
+    &::before {
+      color: red;
+      margin-right: 4px;
+      vertical-align: middle;
+      content: '*'
+    }
+  }
+}

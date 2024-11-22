@@ -1,0 +1,31 @@
+module.exports = {
+  root: true,
+  env: {
+    browser: true,
+    node: true,
+  },
+  parserOptions: {
+    parser: 'babel-eslint',
+    requireConfigFile: false,
+  },
+  extends: ['plugin:vue/essential', 'eslint:recommended'],
+  rules: {
+    // 'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    // 'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
+    'vue/multi-word-component-names': 'off',
+    'vue/attribute-hyphenation': 'off',
+    'no-unused-vars': 'off',
+    'no-console': 'off',
+    'no-debugger': 'off',
+    'vue/no-v-html': 'off',
+    'no-prototype-builtins': 'off',
+    'vue/html-self-closing': 'off',
+    'no-new': 'off',
+    'vue/component-definition-name-casing': 'off',
+    'require-await': 'off',
+    'no-lonely-if': 'off',
+    'valid-typeof': 'off',
+    'vue/no-multiple-template-root': 'off',
+    'node/handle-callback-err': 'off',
+  },
+};

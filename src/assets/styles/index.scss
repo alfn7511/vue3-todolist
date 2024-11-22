@@ -1,0 +1,84 @@
+@use '~@/assets/styles/reset' as *;
+@use '~@/assets/styles/layout' as *;
+@use '~@/assets/styles/devexpress' as *;
+@use '~@/assets/styles/vuetify' as *;
+
+
+.search-box {
+  padding: 10px;
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .search-form {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: -10px;
+
+    .form-wrap {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+      margin-right: 20px;
+
+      strong {
+        white-space: nowrap;
+        color: #1976d2 !important;
+        margin-right: 15px;
+
+        &.form-required::after {
+          margin-left: 2px;
+          color: #fc526e;
+          content: '*';
+        }
+      }
+
+      .v-input--selection-controls {
+        margin: 0;
+      }
+    }
+  }
+
+  .search-btns {
+    display: flex;
+    flex-wrap: wrap;
+    // align-items: center;
+    align-content: flex-start;
+    justify-content: flex-end;
+    margin-top: -10px;
+
+    .v-btn {
+      margin-top: 10px;
+      padding: 0 8px;
+      background-color: #ffffff;
+      border: 1px solid #013581;
+      color: #013581;
+
+      &:last-of-type {
+        background-color: #013581;
+        border: 1px solid #013581;
+        color: #fff;
+      }
+
+      &.secondary {
+        background-color: #ffffff !important;
+        border: 1px solid #013581 !important;
+        color: #013581 !important;
+      }
+
+      &.primary {
+        background-color: #013581 !important;
+        border: 1px solid #013581 !important;
+        color: #fff !important;
+      }
+
+      &.v-btn--disabled {
+        background: rgba(0, 0, 0, 0.12) !important;
+        border: 1px solid rgba(0, 0, 0, 0.26) !important;
+        color: rgba(0, 0, 0, 0.26) !important;
+      }
+    }
+  }
+}

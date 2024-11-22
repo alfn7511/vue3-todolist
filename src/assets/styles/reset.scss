@@ -1,0 +1,127 @@
+body,
+th,
+td,
+input,
+select,
+textarea,
+button,
+.dx-widget,
+.v-application {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Apple SD Gothic Neo", Helvetica, "돋움", Dotum, Sans-serif !important;
+  color: #4f4f4f;
+  font-weight: 400;
+}
+
+/*스크롤 디자인 시작*/
+html,
+body {
+  overflow: hidden;
+}
+
+html,
+body,
+.v-navigation-drawer__content,
+.v-main {
+  scrollbar-width: thin;
+  scrollbar-color: #00309c;
+
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: rgba(0, 0, 0, 0.4);
+    background-clip: padding-box;
+  }
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 100;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-Thin.eot),
+    url(~@/assets/fonts/NotoSans-Thin.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-Thin.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-Thin.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-DemiLight.eot),
+    url(~@/assets/fonts/NotoSans-DemiLight.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-DemiLight.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-DemiLight.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-Regular.eot),
+    url(~@/assets/fonts/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-Regular.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-Regular.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 500;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-Medium.eot),
+    url(~@/assets/fonts/NotoSans-Medium.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-Medium.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-Medium.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 700;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-Bold.eot),
+    url(~@/assets/fonts/NotoSans-Bold.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-Bold.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-Bold.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Noto Sans KR';
+  font-style: normal;
+  font-weight: 900;
+  src: local(''),
+    url(~@/assets/fonts/NotoSans-Black.eot),
+    url(~@/assets/fonts/NotoSans-Black.eot?#iefix) format('embedded-opentype'),
+    url(~@/assets/fonts/NotoSans-Black.woff2) format('woff2'),
+    url(~@/assets/fonts/NotoSans-Black.woff) format('woff');
+}
+
+@font-face {
+  font-family: 'Black Han Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+    url(~@/assets/fonts/BlackHanSans-Regular.eot),
+    url(~@/assets/fonts/BlackHanSans-Regular.eot?#iefix) format('embedded-opentype'),
+    // url(~@/assets/fonts/BlackHanSans-Regular.woff2) format('woff2'),
+    url(~@/assets/fonts/BlackHanSans-Regular.woff) format('woff');
+}
